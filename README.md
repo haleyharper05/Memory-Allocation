@@ -29,3 +29,7 @@ In this simulation, memory is represented as a list of blocks:
 Example:
 python
 [20, -30, 15, -10]
+
+## Debugging Note
+
+An issue occurred in the Next-Fit implementation where an index went out of range after memory changes. This was resolved by ensuring the saved index always stayed within valid bounds.
